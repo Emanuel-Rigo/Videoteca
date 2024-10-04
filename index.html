@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Videoteca</title>
+  </head>
+  <body>
+    <div class="secondBody" id="secondBody">
+      <div id="container1" class="container1">
+        <div class="container" id="container">
+          <div class="container__name">
+            <h2 class="movie--h2">My Movie V2.0</h2>
+            <p>Love the seventh art</p>
+          </div>
+          <div class="container__login" id="containerLogin">
+            <form name="form" class="form">
+              <input
+                type="text"
+                class="form__input"
+                id="usernameInput"
+                placeholder="username"
+              />
+              <input
+                type="password"
+                class="form__input"
+                id="passwordInput"
+                placeholder="password"
+              />
+
+              <div class="button-container">
+                <button class="button button--send" id="btnLogin">
+                  Log In
+                </button>
+                <div class="form__check">
+                  <p class="recuerdame">Recuerdame</p>
+                  <input type="checkbox" name="rememberme" id="rememberme" />
+                  <label class="lbl-switch" for="rememberme"></label>
+                </div>
+              </div>
+            </form>
+            <button class="button" id="register">
+              <p>registrarme</p>
+              <p>icono</p>
+            </button>
+          </div>
+
+          <div class="container__login disabled" id="containerRegister">
+            <p class="ingreso--datos">Ingresa tus datos</p>
+            <form name="form" class="form">
+              <input
+                type="text"
+                class="form__input registro__input"
+                id="registerName"
+                placeholder="Ingresa tu nombre"
+              />
+              <input
+                type="text"
+                class="form__input registro__input"
+                id="registerSurname"
+                placeholder="Ingresa tu apellido"
+              />
+              <input
+                type="email"
+                class="form__input registro__input"
+                id="registerMail"
+                placeholder="Ingresa tu mail"
+              />
+              <input
+                type="password"
+                class="form__input registro__input"
+                id="registerPassword"
+                placeholder="Ingresa tu contraseña"
+              />
+
+              <div class="container__avatars1">
+                <h3>Selecciona tu avatar</h3>
+                <div class="container__avatars">
+                  <div id="bat" class="avatar--img">
+                    <img class="avatar--register" src="avatars/bat.png" />
+                  </div>
+                  <div id="cat" class="avatar--img">
+                    <img class="avatar--register" src="avatars/cat.png" />
+                  </div>
+                  <div id="cards" class="avatar--img">
+                    <img class="avatar--register" src="avatars/cards.png" />
+                  </div>
+                  <div id="astronaut" class="avatar--img">
+                    <img class="avatar--register" src="avatars/astronaut.png" />
+                  </div>
+                  <div id="cinema" class="avatar--img">
+                    <img class="avatar--register" src="avatars/cinema.png" />
+                  </div>
+                  <div id="heart" class="avatar--img">
+                    <img class="avatar--register" src="avatars/heart.png" />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="cancelsend">
+              <button class="button button--cancelSend" id="send">
+                <p>enviar</p>
+              </button>
+              <button class="button button--cancelSend" id="cancelRegister">
+                <p>cancelar</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="container2" class="container2 disabled">
+        <div id="container2Settings" class="container2__settings disabled">
+          <div id="settings" class="settings">
+            <span id="close" class="material-symbols-outlined"> close </span>
+            <p id="p__info" class="p__info">
+              Hemos creado esta página web dedicada al cine, donde se brindan
+              datos y descripciones de algunas de nuestras películas favoritas.
+              <br />
+              Esta destinada a todos aquellos que tenemos una pasión en común
+              por el séptimo arte. <br />
+              Esta plataforma refleja su amor por el cine, creando un espacio
+              para que los aficionados puedan explorar y disfrutar. <br />Te
+              brinda buscar películas por genero, año y nombre
+              <br />
+              <br />
+              Te a pasado de no saber que pelicula ver ese sabado por la noche
+              tan especial?<br />
+              Te podemos orientar un poco que pelicula podes ver.... solo
+              encargate de pedir el delivery para que llege a tiempo.
+            </p>
+          </div>
+        </div>
+
+        <div class="container2__aside">
+          <aside id="aside" class="aside">
+            <div class="aside__avatar">
+              <img id="avatar" class="aside__image" src="avatars/cards.png" />
+
+              <div class="saludo">
+                <h3 class="container2__h3" id="titulo">Icono</h3>
+              </div>
+            </div>
+            <div class="container2__filter">
+              <select class="container2__select" name="" id="container2Select">
+                <option value="genero">Ordenar</option>
+                <option value="year">Año</option>
+                <option value="az">A-Z</option>
+              </select>
+
+              <input
+                id="nombre"
+                type="text"
+                class="container2__select buscar"
+                placeholder="Buscar por nombre"
+              />
+              <input
+                id="fecha"
+                type="text"
+                class="container2__select buscar"
+                placeholder="Buscar por año"
+              />
+              <input
+                id="genero"
+                type="text"
+                class="container2__select buscar"
+                placeholder="Buscar por genero"
+              />
+
+              <div class="logOut">
+                <div id="logOut" class="logOut__btn">
+                  <p>Log Out</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="container2__main">
+          <main class="main">
+            <div class="gridContainer" id="gridContainer"></div>
+            <div class="settingGear">
+              <a id="btnSettings" class="material-symbols-outlined">info</a>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
